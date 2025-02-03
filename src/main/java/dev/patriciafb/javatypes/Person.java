@@ -6,10 +6,10 @@ public class Person {
     String name;
     String surname;
     String documentId;
-    int age;
+    String age;
 
 
-public Person (String name, String surname, String documentId, int age) {
+public Person (String name, String surname, String documentId, String age) {
     this.name = name;
     this.surname = surname;
     this.documentId = documentId;
@@ -29,7 +29,7 @@ public String getDocumentId() {
     return documentId;
 }
 
-public int getAge() {
+public String getAge() {
     return age;
 }
 
@@ -43,14 +43,10 @@ public void setSurname(String surname) {
 public void setDocumentId(String documentId) {
     this.documentId = documentId;
 }
-public void setAge(int age) {
-    if (age > 0) {
+public void setAge(String age) {
         this.age = age;
-    }
-    else {
-        System.out.println("La edad debe ser mayor que 0.");
-    }
- }
+}
+
 
 public void mostrarInformacion() {
     System.out.println("Nombre: " + name);
@@ -58,6 +54,5 @@ public void mostrarInformacion() {
     System.out.println("Documento: " + documentId);
     System.out.println("Edad: " + age);
 }
-
 
 }

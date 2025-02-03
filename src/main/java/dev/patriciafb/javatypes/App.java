@@ -2,7 +2,8 @@ package dev.patriciafb.javatypes;
 
 public class App {
     public static void main (String[] args) {
-    Person person1 = new Person("Patricia", "Fernandez", 123456, age:"41");
+        Person person1 = new Person("Patricia", "Fernandez", "123456", "41");
+
 
     extracted(person1);
 }
